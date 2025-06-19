@@ -1,7 +1,7 @@
 # ZanClo Portfolio Website
 
 Ini adalah website portofolio saya dengan contoh website untuk bisnis clothing saya (ZanClo). Berisi:
-- Portfolio Project
+- Contoh koleksi produk (Clothing)
 - Blog tentang proses membangun bisnis
 - Info kontak
 
