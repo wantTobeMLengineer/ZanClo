@@ -3,31 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <title>ZanClo - The House of Minimalist Clothing</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 
 
 <body class="bg-white text-gray-900 font-sans">
 
   <!-- 🌐 Navbar -->
-  <header class="bg-black text-white">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">ZanClo</h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="about.html" class="hover:underline">About</a>
-        <a href="products.html" class="hover:underline">Products</a>
-        <a href="blog.html" class="hover:underline">Blog</a>
-      </nav>
-    </div>
-  </header>
+<header class="bg-black text-white p-4">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold">ZanClo</a>
+
+    <!-- Hamburger button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Nav links -->
+    <nav id="menu" class="hidden md:flex space-x-4">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="products.html" class="hover:underline">Products</a>
+      <a href="blog.html" class="hover:underline">Blog</a>
+    </nav>
+  </div>
+ </header>
+
 
 <!-- 🎯 Hero Carousel Section -->
 <section id="hero" class="relative h-screen overflow-hidden">
@@ -58,10 +64,10 @@
 </section>
 
   <!--Best Seller-->
-  <section class="py-12 bg-white">
+  <section class="fade py-12 bg-white text-center" id="hero">
   <!-- Featured Products -->
-  <h3 class="text-2xl font-bold text-center mb-6">Best Sellers</h3>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <h3 class="text-2xl font-bold text-center mb-6">Best Sellers</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     
   <!-- potongan grid produk sama seperti products.html -->
     
@@ -87,18 +93,17 @@
         <p class="text-gray-600">Pilihan tone yang jarang ditemui. Soft dan cocok untuk kulit sawo matang.</p>
       </div>
     </div>
-  </section>
-    
+    <br>
   <div class="text-center mt-4">
     <a href="products.html"
        class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800">
       Lihat Semua Koleksi
     </a>
   </div>
-</section>
+ </section>
 
 <!-- 💎 Value Proposition -->
-<section class="py-16 bg-white">
+<section class="fade py-16 bg-white max-w-6xl mx-auto px-4" id="products-section">
   <div class="max-w-5xl mx-auto text-center">
     <h3 class="text-2xl font-bold mb-8">Kenapa Pilih ZanClo?</h3>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -123,7 +128,7 @@
 </section>
 
 <!-- 🗣️ Testimonial -->
-<section class="py-16 bg-gray-100">
+<section class="fade py-16 bg-gray-100" id="products-section">
   <div class="max-w-4xl mx-auto text-center">
     <h3 class="text-2xl font-bold mb-8">Apa Kata Mereka?</h3>
     <div class="space-y-8">
@@ -199,6 +204,11 @@
   </div>
 </footer>
 
+<button id="back-to-top"
+        class="fixed bottom-6 right-6 p-3 bg-black text-white rounded-full hidden focus:outline-none"
+        aria-label="Back to Top">
+  ↑
+</button>
 
 <script src="assets/js/main.js"></script>
 </body>

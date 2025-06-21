@@ -1,4 +1,4 @@
-// main.js
+// bacgkround Image Carrousels
 document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('#slides .slide');
   let current = 0;
@@ -21,3 +21,43 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 5000);
 });
 
+// Back to Top
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    backToTop.classList.remove('hidden');
+  } else {
+    backToTop.classList.add('hidden');
+  }
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+// Toggle mobile menu
+const btn  = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+// Scroll animation
+const faders = document.querySelectorAll('.fade');
+
+const appearOptions = { threshold: 0.2 };
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
