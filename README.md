@@ -4,7 +4,7 @@ Ini adalah website portofolio saya dengan contoh website bisnis clothing saya (Z
 Website untuk toko clothing minimalis.
 
 🚀 Live Demo
-[https://zanclo.github.io](https://wanttobemlengineer.github.io/ZanClo.github.io/)
+https://github.com/wantTobeMLengineer/ZanClo
 
 🧰 Cara Setup
 1. `git clone [https://github.com/zanclo/zanclo.github.io.git](https://github.com/wantTobeMLengineer/ZanClo.github.io.git)`
