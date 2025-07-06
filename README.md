@@ -7,7 +7,7 @@ Website untuk toko clothing minimalis.
 [https://github.com/wantTobeMLengineer/ZanClo](https://wanttobemlengineer.github.io/ZanClo/)
 
 🧰 Cara Setup
-1. `https://github.com/wantTobeMLengineer/ZanClo.git`
+1. Clone :  `https://github.com/wantTobeMLengineer/ZanClo.git`
 2. Buka `index.html` di browser
 
 ✨ Fitur
