@@ -4,7 +4,7 @@ Ini adalah website portofolio saya dengan contoh website bisnis clothing saya (Z
 Website untuk toko clothing minimalis.
 
 🚀 Live Demo
-https://github.com/wantTobeMLengineer/ZanClo
+[https://github.com/wantTobeMLengineer/ZanClo](https://wanttobemlengineer.github.io/ZanClo/)
 
 🧰 Cara Setup
 1. `git clone [https://github.com/zanclo/zanclo.github.io.git](https://github.com/wantTobeMLengineer/ZanClo.github.io.git)`
@@ -29,4 +29,4 @@ https://github.com/wantTobeMLengineer/ZanClo
 - Halaman checkout sederhana
 
 📄 Lisensi
-MIT License
+- MIT License
